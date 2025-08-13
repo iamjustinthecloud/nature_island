@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.egg-info/
+
+# Poetry
+poetry.lock
+
+# CDK
+cdk.out/
+
+# IDE
+.vscode/
+.idea/
