@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nature-island-service"
+version = "0.1.0"
+description = ""
+authors = ["iamjustinthecloud <iamjustinthecloud@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "nature_island_service" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+attrs = "^25.3.0"
+cattrs = "^25.1.1"
+boto3 = "^1.40.8"
+
+
+[tool.poetry.group.dev.dependencies]
+moto = "^5.1.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
