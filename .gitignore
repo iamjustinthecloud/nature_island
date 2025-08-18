@@ -14,3 +14,8 @@ cdk.out/
 # IDE
 .vscode/
 .idea/
+
+# Ignore local smoke test script
+scripts/
+
+
