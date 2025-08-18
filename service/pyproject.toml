@@ -11,6 +11,8 @@ python = ">=3.12,<4.0"
 attrs = "^25.3.0"
 cattrs = "^25.1.1"
 boto3 = "^1.40.8"
+moto = "^5.1.10"
+pytest = "^8.4.1"
 
 
 [tool.poetry.group.dev.dependencies]
