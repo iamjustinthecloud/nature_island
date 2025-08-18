@@ -1,5 +1,6 @@
 from __future__ import annotations
-import json, boto3
+import json
+import boto3
 from typing import Any, Dict
 from cattrs import structure, unstructure
 from .config import AppConfig
@@ -7,7 +8,7 @@ from .dto import ItemCreate, ItemsResponse
 from .models import Item
 
 _cfg = AppConfig.from_env()
-_table = boto3.resource("dynamodb").Table(_cfg.table_name)
+_table = boto3.resource("dynamodb", region_name=_cfg.aws_region).Table(_cfg.table_name)
 
 
 def _resp(code: int, body: dict) -> dict:
